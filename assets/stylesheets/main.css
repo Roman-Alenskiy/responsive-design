@@ -172,7 +172,7 @@ a {
 }
 
 .logo:hover {
-	background-image: url(/assets/images/logo_hover.gif);
+	background-image: url("/assets/images/logo_hover.gif");
 	background-size: cover;
 }
 
