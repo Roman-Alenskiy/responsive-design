@@ -357,6 +357,46 @@ a {
 }
 
 /*
+* Footer
+*/
+
+footer {
+	padding-top: 50px;
+}
+
+.footer-first {
+	font-family: 'Saira Semi Condensed', sans-serif;
+	letter-spacing: 0.5px;
+	color: #9e9e9e;
+	background-color: #131313;
+	text-transform: uppercase;
+	justify-content: center;
+}
+
+.footer-second {
+	color: white;
+	background-color: black;
+}
+
+.footer-first, .footer-second {
+	font-size: 0.8rem;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.footer-first a:hover {
+	color: white;
+}
+
+.footer-first li {
+	padding-right: 15px;
+}
+
+.footer-second img {
+	height: 0.6rem;
+}
+
+/*
 * Media queries
 */
 
