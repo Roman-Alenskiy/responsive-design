@@ -63,8 +63,25 @@ h1, h2, h3, h4, h5, p {
 	padding: 5px 0;
 }
 
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
 h2, h3, h4 {
 	font-family: 'Roboto', sans-serif;
+}
+
+h2, h3 {
+	font-size: 1.3rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
 }
 
 *,
@@ -80,6 +97,12 @@ a {
 
 .mr-auto {
 	margin-right: auto;
+}
+
+.container {
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .column {
@@ -208,24 +231,6 @@ a {
 	padding: 2px 8px 0;
 }
 
-
-.cover-headline h2, .cover-headline h3 {
-	font-weight: bold;
-}
-
-.cover-headline h2 {
-	font-size: 1.3rem;
-}
-
-.cover-headline h3 {
-	font-size: 1.3rem;
-}
-
-.cover-headline h5 {
-	font-size: 0.8rem;
-	text-transform: uppercase;
-}
-
 .cover-story {
 	width: 100%;
 	position: relative;
@@ -291,6 +296,56 @@ a {
 	height: 29vh;
 }
 
+.latest-news {
+	padding-top: 40px;
+}
+
+.latest-news h3 {
+	color: #f42;
+}
+
+.latest-news h3 a:after {
+	content: "";
+	background-image: url('../images/arrow_f42.svg');
+	display: inline-block;
+	height: 1rem;
+	width: 1rem;
+}
+
+.latest-news h3 a:hover {
+	color: black;
+}
+
+.latest-news h3 a:hover:after {
+	background-image: url('../images/arrow.svg')
+}
+
+.news {
+	padding-top: 25px;
+	margin: -12px;
+}
+
+.news-item {
+	flex-basis: 25%;
+	padding: 12px;
+}
+
+
+.news-item-headline {
+	margin-left: 85px;
+	margin-top: -5px;
+}
+
+.news-item-image {
+	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/PTKKoP4-540x270.jpg);
+	height: 75px;
+	width: 75px;
+	float: left;
+	background-size: cover;
+	background-position: 50%;
+	transition: 0.5s ease;
+}
+
 /*
 * Media queries
 */
@@ -341,21 +396,44 @@ a {
 		flex-direction: row;
 	}
 
-	.cover-headline h2 {
+	h2 {
 		font-size: 3rem;
 	}
 	
-	.cover-headline h3 {
+	h3 {
 		font-size: 1.2rem;
 	}
 
 	.col-70 .cover-trigger {
 		right: 8px;
 	}
-	
+
+	.latest-news .column {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.news-item {
+		flex-basis: 33.3%;
+	}
+
+	.news-item-image {
+		width: 100%;
+		height: 17vh;
+		float: none;
+	}	
+
+	.news-item-headline {
+		margin-left: 0;
+		margin-top: 0;
+	}
 }
 
 @media screen and (min-width: 1024px) {
+	.container {
+		max-width: 1192px;
+	}
+
 	.header-logo {
 		display: none;
 	}
@@ -387,11 +465,19 @@ a {
 		height: 30vh;
 	}
 
-	.cover-headline h2 {
+	h2 {
 		font-size: 3.5rem;
 	}
 	
-	.cover-headline h3 {
-		font-size: 1.5rem;
+	h3 {
+		font-size: 1.6rem;
+	}
+
+	h4 {
+		font-size: 1.1rem;
+	}
+
+	.news-item {
+		flex-basis: 25%;
 	}
 }
