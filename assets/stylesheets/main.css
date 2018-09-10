@@ -336,6 +336,16 @@ a {
 	margin-top: -5px;
 }
 
+.news-item-headline h4 a:hover {
+	color: #f42;
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 67, 34, 0.2);
+}
+
+.news-item-headline p a:hover {
+	color: #464646;
+}
+
 .news-item-image {
 	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/PTKKoP4-540x270.jpg);
 	height: 75px;
