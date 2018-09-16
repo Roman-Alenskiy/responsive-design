@@ -178,6 +178,7 @@ a {
 #menu {
 	display: list-item;
 	padding: 15px 17px;
+	margin-left: auto;
 	border-left: 1px solid #ebebeb;
 	color: #f42;
 }
